@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="portfolioStyle.css">
+    <script>
+        function showAbout() {
+            var x = document.getElementById("about");
+            if (x.style.display == "none") {
+                x.style.display = "block";
+            }
+            else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+    <script>
+        function showProjects() {
+            var x = document.getElementById("projects");
+            if (x.style.display == "none") {
+                x.style.display = "block";
+            }
+            else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+    <script>
+        function showWork() {
+            var x = document.getElementById("workExperience");
+            if (x.style.display == "none") {
+                x.style.display = "block";
+            }
+            else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+    <script>
+        function showLM() {
+            var x = document.getElementById("learnMore");
+            if (x.style.display == "none") {
+                x.style.display = "block";
+            }
+            else {
+                x.style.display = "none";
+            }
+        }
+     </script>
+</head>
+
+<body>
+    <header>
+        <h2>Chris Swindler's Portfolio</h2>
+    </header>
+    <div id="b1" class="box1">
+        <button id="button1" class="buttons" onclick="showAbout()">About</button>
+        <p id="about" class="aboutP">
+            My name is Chris Swindler, and I am seeking work
+            as a Software Engineer. My skills include C++, Java, 
+            C#, SQL, as well as some basic skills in Web Development.
+            I am a self-learner, hard-working, and excellent at 
+            working in a team.
+        </p>
+    </div>
+    <div id="b2" class="box2">
+        <button id="button2" class="buttons" onclick="showProjects()">Projects</button>
+        <ol id="projects" class="projectsP">
+            <li><a href="hikes.html" target="_blank">hikes</a></li>
+            <li><a href="example.html" target="_blank">exampleHTML</a></li>
+            <li><a href="practice.html" target="_blank">practice</a></li>
+        </ol>
+    </div>
+    <div id="b3" class="box3">
+        <button id="button3" class="buttons" onclick="showWork()">Work Experience</button>
+        <ul id="workExperience" class="">
+            <li>Financial analyst for MJB associates.</li>
+            <li>Worked in security for BYU housing.</li>
+        </ul>
+    </div>
+    <div id="b4" class="box4">
+        <button id="button4" class="buttons" onclick="showLM()"> Learn More</button>
+        <ul id="learnMore" class="learnMoreP">
+            <li> <a href="linkedin.com">LinkedIn</a></li>
+            <li> <a href="github.com">GitHub</a></li>
+        </ul>
+    </div>
+    <div id="images">
+        <img src="BYU.jpeg" alt="BYU" id="byuImage">
+        <img src="NJ.jpg" alt="NJ" id="njImage">
+    </div>
+</body>
+
+</html>
